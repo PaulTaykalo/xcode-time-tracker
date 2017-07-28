@@ -1,5 +1,5 @@
 # R visualization
-Make sure that you installed [R](https://www.r-project.org/about.html)
+Make sure that you installed [R](https://www.r-project.org/about.html)  
 I, personally used [R studio](https://www.rstudio.com/)
 
 ## Visualization
