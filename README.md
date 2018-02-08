@@ -21,9 +21,13 @@ There'are two installation steps:
 ## Scripts installation
 Simply run 
 ```
-install.sh
+cd ~/Downloads
+git clone https://github.com/PaulTaykalo/xcode-time-tracker
+cd xcode-time-tracker 
+sh ./install.sh
+rm -rf xcode-time-tracker
 ```
-This will copy `project_start.py` and `project_end.py` to the `~/.timecheck` directory
+This will download and copy `project_start.py` and `project_end.py` to the `~/.timecheck` directory
 
 ## Xcode Behaviours setup
 
