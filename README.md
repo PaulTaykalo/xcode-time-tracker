@@ -21,12 +21,14 @@ There'are two installation steps:
 ## Scripts installation
 Simply run 
 ```
-cd ~/Downloads
+CURRENT=`pwd`
+cd `mktemp -d`
 git clone https://github.com/PaulTaykalo/xcode-time-tracker
-cd xcode-time-tracker 
+cd xcode-time-tracker
 sh ./install.sh
 cd ..
 rm -rf xcode-time-tracker
+cd $CURRENT
 ```
 This will download and copy `project_start.py` and `project_end.py` to the `~/.timecheck` directory
 
