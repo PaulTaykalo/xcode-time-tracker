@@ -53,6 +53,17 @@ No project,HeyYouAreAwesome.xcworkspace,1597876725,1597876729,Build Succeeded,4
 ```
 
 # Visualization
+
+## Console
+Run `ruby ~/.timecheck/report_time.rb`
+
+This script will output the accumulated time you've spend building projects on Xcode within the current day, separated by project.
+It will keep reporting updated times as soon as a build/run is finished.
+To stop it, just use `Ctrl+C`
+
+<img width="702" alt="Screen Shot 2020-10-07 at 1 41 22 PM" src="https://user-images.githubusercontent.com/7887319/95315175-36fa5900-08a3-11eb-87cd-f48e5cf36f14.png">
+
+## Graphically
 The next step is to visualize this information.
 I used [R](https://www.r-project.org/about.html) language for that. But there's more coming
 This how it can look like if you'll be able to setup R correcly :)
