@@ -1,15 +1,5 @@
 # This script will output the accumulated time you've spend building projects on Xcode within the current day.
 #
-# Output looks like:
-#    *********
-#    You've spent 27min 24s building <your-project-name>.xcworkspace today
-#
-#
-# To use it:
-# 1. Follow the installation process from https://github.com/PaulTaykalo/xcode-time-tracker
-# 2. Copy this script to `~/.timecheck` folder.
-# 3. Run `ruby ~/.timecheck/report_time.rb`
-#
 # This is a never ending script that will keep reporting updated times as soon as a build/run is finished.
 # To stop it, just use Ctrl+C
 
