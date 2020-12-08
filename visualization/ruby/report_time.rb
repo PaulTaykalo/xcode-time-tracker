@@ -42,10 +42,13 @@ def report_time(path)
 				time_spent_on_build += event[:duration].to_i
 			end
 		end
-	seconds = time_spent_on_build % 60
-	minutes = time_spent_on_build / 60
+		seconds = time_spent_on_build % 60
+		minutes = time_spent_on_build / 60
 
-	puts "You've spent #{minutes}min #{seconds}s building #{project} today"
+		if seconds == 0 && minutes == 0
+			next
+		end
+		puts "You've spent #{minutes}min #{seconds}s building #{project} today"
 	end
 end
 
