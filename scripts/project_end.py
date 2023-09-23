@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # Simly calling pyton to finish the task
 import sys,time,os
 from os.path import expanduser
@@ -15,9 +15,7 @@ project_name = os.environ.get("XcodeWorkspace", "No workspace")
 workspace_name = os.environ.get("XcodeProject", "No project")
 #user_name = os.environ.get("USER", "No user")
 
-print "It took " + str(diff) + " seconds to [" + activity + "] for " + project_name
+print("It took " + str(diff) + " seconds to [" + activity + "] for " + project_name)
 
-with open (expanduser("~/.timecheck/results"), 'a') as f: 
+with open (expanduser("~/.timecheck/results"), 'a') as f:
 	f.write(workspace_name + "," + project_name + ","+ str(start_time) + "," +  str(seconds) + "," + activity + "," + str(diff) + "\n")
-
-# Upload th results somewhere	
